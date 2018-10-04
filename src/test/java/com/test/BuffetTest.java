@@ -19,10 +19,32 @@ public class BuffetTest {
 	}
 	
 	@Test
-	public void getNumberFromSetNumberByNumber() {
+	public void getNumberFromSetNumberByNumber5() {
 		this.number = 5;
 		
 		int expected = 5;
+		
+		buf.setNumber(this.number);
+		int actual = buf.getNumber();
+		
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void getNumberFromSetNumberByNumber10() {
+		this.number = 10;
+		
+		int expected = 10;
+		
+		buf.setNumber(this.number);
+		int actual = buf.getNumber();
+		
+		Assert.assertEquals(expected, actual);
+	}
+	@Test
+	public void getNumberFromSetNumberByNumber6() {
+		this.number = 6;
+		
+		int expected = 6;
 		
 		buf.setNumber(this.number);
 		int actual = buf.getNumber();
